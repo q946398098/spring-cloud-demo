@@ -4,8 +4,12 @@ server:
 spring:
   application:
     name: service-provider  # 服务名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848  # Nacos地址
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
