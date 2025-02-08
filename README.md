@@ -1,7 +1,7 @@
 
 启动顺序：
 
-先启动 eureka-server
+先启动 eureka-server（废除了，不用了，本地要开启nacos,然后再配置那里填写好nacos）
 
 再启动 service-provider
 
