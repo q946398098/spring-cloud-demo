@@ -6,6 +6,8 @@ spring:
     name: service-consumer
   cloud:
     nacos:
+      discovery:
+        server-addr: localhost:8848  # Nacos地址
       config:
         server-addr: localhost:8848
         file-extension: yaml
@@ -13,7 +15,7 @@ spring:
           enabled: false
 dubbo:
   application:
-    name: service-consumer
+    name: dubbo-consumer
   registry:
     address: nacos://127.0.0.1:8848
 #eureka:

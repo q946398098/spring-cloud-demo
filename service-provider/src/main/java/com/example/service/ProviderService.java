@@ -1,11 +1,11 @@
 package com.example.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Component;
 
-@Service(version = "1.0.0")
+@DubboService
 @Component
-public class ProviderService {
+public class ProviderService implements DemoService {
     public String getInfo() {
         return "Hello from provider, port: ";
     }
