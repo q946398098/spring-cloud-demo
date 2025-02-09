@@ -16,6 +16,7 @@
     <module>service-provider</module>
     <module>eureka-server</module>
     <module>service-consumer</module>
+    <module>gateway</module>
   </modules>
 
   <parent>

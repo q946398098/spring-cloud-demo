@@ -9,6 +9,13 @@ spring:
       config:
         server-addr: localhost:8848
         file-extension: yaml
+        import-check:
+          enabled: false
+dubbo:
+  application:
+    name: service-consumer
+  registry:
+    address: nacos://127.0.0.1:8848
 #eureka:
 #  client:
 #    service-url:
